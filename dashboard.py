@@ -22,8 +22,8 @@ custom_variables = {
 
 # 📌 Load CSV files based on selected river
 def load_data(river):
-    raw_file_path = f"D:/AI-Driven/project/{river}_Raw.csv"
-    cleaned_file_path = f"D:/AI-Driven/project/{river}_Cleaned.csv"
+    raw_file_path = f"{river}_Raw.csv"
+    cleaned_file_path = f"{river}_Cleaned.csv"
 
     try:
         df_raw = pd.read_csv(raw_file_path, usecols=custom_variables[river]["raw"])
